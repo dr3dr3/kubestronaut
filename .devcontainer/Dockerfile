@@ -2,6 +2,9 @@ FROM node:alpine
 
 LABEL maintainer="Andre Dreyer"
 
+# Fish Shell
+RUN apk update && apk add fish
+
 # Claude Code
 RUN npm install -g @anthropic-ai/claude-code
 
